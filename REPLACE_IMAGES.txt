@@ -1,0 +1,2 @@
+Replace the sample remote image URLs in app.js and index.html with the shop's real product photos and store image.
+For best results, use well-lit product images with a consistent background and square/portrait crops.

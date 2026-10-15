@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#171716" />
+  <meta name="description" content="Krishna Shoes — every step, your identity." />
+  <title>Krishna Shoes | Every Step, Your Identity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="intro" id="intro" aria-label="Krishna Shoes introduction">
+    <div class="intro-mark">KS</div>
+    <p class="eyebrow">STEP INTO YOUR STYLE</p>
+    <h1>KRISHNA <span>SHOES</span></h1>
+    <p class="intro-tagline" data-i18n="tagline">हर कदम में अपनी पहचान।</p>
+  </div>
+
+  <header class="topbar">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" title="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <a class="brand" href="#home" aria-label="Krishna Shoes home"><span class="brand-mark">KS</span><span>KRISHNA <b>SHOES</b></span></a>
+    <form class="top-search" id="topSearchForm" role="search">
+      <svg class="top-search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+      <input id="searchInput" type="search" placeholder="Search for shoes, slippers..." data-i18n-placeholder="searchPlaceholder" aria-label="Search for shoes, slippers" />
+      <button type="submit" aria-label="Search products">Search</button>
+    </form>
+    <div class="top-actions">
+      <button class="icon-btn notification-btn" id="noticeBtn" aria-label="Notifications" aria-expanded="false" title="Notifications"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg><i></i></button>
+      <div class="notification-popover" id="notificationPopover" hidden><p class="notification-heading">Notifications</p><div class="notification-item"><span class="notification-dot"></span><div><b>Welcome to Krishna Shoes</b><p>Explore our latest footwear collection.</p></div></div><div class="notification-item"><span class="notification-dot muted"></span><div><b>Offers & new arrivals</b><p>Visit the store for current offers and availability.</p></div></div></div>
+    </div>
+  </header>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-label="Main navigation">
+    <div class="drawer-head"><span class="brand-mark">KS</span><button class="icon-btn" id="closeDrawer" aria-label="Close menu">×</button></div>
+    <p class="eyebrow" data-i18n="menu">MENU</p>
+    <nav>
+      <a href="#home" data-i18n="home">Home</a>
+      <a href="#products" data-i18n="products">Our Products</a>
+      <a href="#about" data-i18n="about">About Krishna Shoes</a>
+      <a href="#contact" data-i18n="contact">Contact Us</a>
+      <a href="#location" data-i18n="location">Our Location</a>
+      <a href="gallery.html" data-i18n="gallery">Gallery</a>
+    </nav>
+    <div class="drawer-bottom">
+      <p class="eyebrow" data-i18n="preferences">PREFERENCES</p>
+      <button class="drawer-setting" id="settingsBtn">⚙ <span data-i18n="settings">Settings</span></button>
+      <div class="language-toggle"><button data-lang="en" class="active">English</button><button data-lang="hi">हिंदी</button></div>
+    </div>
+  </aside>
+
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">WALK WITH CONFIDENCE</span></p>
+        <h1 data-i18n="heroTitle">हर कदम में<br><em>अपनी पहचान।</em></h1>
+        <p class="hero-description" data-i18n="heroDesc">रोज़ की चाल हो या कोई खास मौका—अपना अंदाज़ चुनिए, अपने कदमों के साथ।</p>
+        <div class="hero-buttons"><a class="btn btn-dark" href="#products"><span data-i18n="explore">Explore Collection</span> <span>↗</span></a><a class="text-link" href="#about" data-i18n="discover">Discover our story</a></div>
+        <div class="hero-meta"><span class="meta-number">01</span><span data-i18n="heroMeta">MADE FOR YOUR EVERYDAY JOURNEY</span></div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-label label-top">THE EVERYDAY EDITION <span>✳</span></div>
+        <div class="hero-shoe-wrap">
+          <img class="hero-shoe" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=85" alt="Red athletic sneaker" />
+        </div>
+        <div class="art-caption"><span class="caption-index">01 / 03</span><span>FIND YOUR<br><b>OWN PACE.</b></span></div>
+        <div class="art-stamp">STEP<br><b>UP</b><br>✳</div>
+      </div>
+      <div class="hero-bottom-note"><span>KRISHNA SHOES</span><span>EST. FOR EVERY STEP</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span class="trust-icon">✳</span><span data-i18n="trust1">Everyday Comfort</span></div><div><span class="trust-icon">◇</span><span data-i18n="trust2">Styles for Every Mood</span></div><div><span class="trust-icon">↗</span><span data-i18n="trust3">Made to Move With You</span></div>
+    </section>
+
+    <section class="section-wrap featured-section" id="featured">
+      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="curated">CURATED FOR YOU</span></p><h2 data-i18n="topSelling">Our Top Selling <em>Products</em></h2></div><a class="text-link" href="#products" data-i18n="viewAll">View all products ↗</a></div>
+      <div class="product-grid featured-grid" id="featuredGrid"></div>
+    </section>
+
+    <section class="brand-statement">
+      <div class="statement-inner reveal"><p class="eyebrow light-eyebrow"><span class="eyebrow-line"></span><span data-i18n="ourPhilosophy">OUR PHILOSOPHY</span></p><h2 data-i18n="statement">सिर्फ़ जूते नहीं,<br><em>हर कदम का अंदाज़।</em></h2><div class="statement-foot"><span>KS / 001</span><p data-i18n="statementDesc">आपकी रोज़मर्रा की दुनिया के लिए, आपके अपने अंदाज़ के साथ।</p><span class="statement-star">✳</span></div></div>
+      <div class="statement-decoration">K</div>
+    </section>
+
+    <section class="section-wrap products-section" id="products">
+      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="theCollection">THE COLLECTION</span></p><h2 data-i18n="shopByStyle">Find Your <em>Style.</em></h2><p class="section-subtitle" data-i18n="collectionDesc">From everyday essentials to statement sneakers.</p></div><div class="sort-control"><label for="sortSelect" data-i18n="sortBy">Sort by</label><select id="sortSelect"><option value="popular" data-i18n="popular">Popular</option><option value="low" data-i18n="lowHigh">Price: Low to High</option><option value="high" data-i18n="highLow">Price: High to Low</option></select></div></div>
+      <div class="filter-row" id="filterRow"><button class="filter-btn active" data-category="All" data-i18n="all">All</button><button class="filter-btn" data-category="Shoes" data-i18n="shoes">Shoes</button><button class="filter-btn" data-category="Sneakers" data-i18n="sneakers">Sneakers</button><button class="filter-btn" data-category="Slippers" data-i18n="slippers">Slippers</button><span class="results-count" id="resultsCount"></span></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3 data-i18n="noResults">No products found</h3><p data-i18n="tryAgain">Try another search or category.</p><button class="btn btn-dark" id="resetFilters" data-i18n="reset">Reset filters</button></div>
+    </section>
+
+
+    <section class="location-section" id="location">
+      <div class="location-image"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=85" alt="Modern retail store interior" loading="lazy"><span class="image-tag">COME SAY HELLO <b>↗</b></span></div>
+      <div class="location-copy reveal"><p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="visitUs">VISIT US IN STORE</span></p><h2 data-i18n="locationTitle">Good things<br>start <em>here.</em></h2><p class="location-description" data-i18n="locationDesc">Come by, explore the collection, and find the pair that feels just right.</p><div class="store-detail"><span class="detail-icon">⌖</span><div><b data-i18n="storeAddress">Store Address</b><p id="storeAddress">Add your shop address here</p></div></div><div class="store-detail"><span class="detail-icon">◷</span><div><b data-i18n="openingHours">Opening Hours</b><p id="storeHours">Mon – Sun · 10:00 AM – 9:00 PM (demo)</p></div></div><a class="btn btn-outline" id="mapsLink" href="https://maps.google.com/" target="_blank" rel="noreferrer"><span data-i18n="getDirections">Get directions</span> ↗</a></div>
+    </section>
+
+    <section class="section-wrap about-section" id="about">
+      <div class="about-left reveal"><p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="ourStory">A LITTLE ABOUT US</span></p><h2 data-i18n="aboutTitle">A good pair.<br><em>A better day.</em></h2></div>
+      <div class="about-right reveal"><p data-i18n="aboutDesc">At Krishna Shoes, we believe the right footwear is more than something you wear—it’s part of how you take on the day. Our aim is to bring together everyday comfort, versatile styles, and choices for every kind of journey.</p><a class="text-link" href="#contact" data-i18n="talkToUs">Talk to us ↗</a><div class="about-signature">KRISHNA <span>SHOES</span></div></div>
+    </section>
+
+    <section class="contact-section" id="contact"><div class="contact-inner section-wrap"><div class="contact-title reveal"><p class="eyebrow light-eyebrow"><span class="eyebrow-line"></span><span data-i18n="letsConnect">LET’S CONNECT</span></p><h2 data-i18n="contactTitle">Need a hand<br>finding <em>your pair?</em></h2><p data-i18n="contactDesc">We’re happy to help with product details, sizes, and availability.</p></div><div class="contact-details reveal"><a class="contact-line" id="phoneLink" href="tel:+910000000000"><span>01 / <b data-i18n="callUs">Call us</b></span><strong id="phoneText">Add phone number ↗</strong></a><a class="contact-line" id="whatsappLink" href="https://wa.me/" target="_blank" rel="noreferrer"><span>02 / <b>WhatsApp</b></span><strong data-i18n="messageUs">Message us ↗</strong></a><a class="contact-line" id="emailLink" href="mailto:hello@example.com"><span>03 / <b>Email</b></span><strong id="emailText">Add email address ↗</strong></a><button class="contact-line contact-notice" id="contactFormBtn"><span>04 / <b data-i18n="quickEnquiry">Quick enquiry</b></span><strong data-i18n="sendEnquiry">Send an enquiry ↗</strong></button></div></div></section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">KS</span><span>KRISHNA <b>SHOES</b></span></a><p data-i18n="footerTagline">हर कदम में अपनी पहचान।</p><span>© <span id="year"></span> KRISHNA SHOES. <span data-i18n="allRights">ALL RIGHTS RESERVED.</span></span></footer>
+
+  <div class="modal-backdrop" id="modalBackdrop"><section class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-label="Product details"><button class="modal-close" id="closeModal" aria-label="Close">×</button><div id="modalContent"></div></section></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+  <script type="module" src="public-sync.js"></script>
+</body>
+</html>

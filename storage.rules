@@ -1,0 +1,15 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isStoreAdmin() {
+      return request.auth != null
+        && request.auth.token.email == 'prabalgyani@gmail.com';
+    }
+    // Images can be displayed publicly; only the designated admin can upload or delete.
+    match /{allPaths=**} {
+      allow read: if true;
+      allow write: if isStoreAdmin() && (request.resource == null || (request.resource.size < 8 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*')));
+    }
+  }
+}
