@@ -11,5 +11,5 @@ export const firebaseConfig = {
 };
 
 // IMPORTANT: Replace this with the exact email of the authorized client admin before live deployment.
-export const ADMIN_EMAIL = "prabalgyani@gmail.com";
+export const ADMIN_EMAIL = "laptopkothiya@gmail.com";
 export const isFirebaseConfigured = () => Boolean(firebaseConfig.apiKey && !firebaseConfig.apiKey.includes("PASTE_") && firebaseConfig.projectId && !firebaseConfig.projectId.includes("PASTE_"));
